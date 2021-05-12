@@ -1,0 +1,39 @@
+body, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  width: 750px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider_carousel {
+  width: calc(1500%);
+  // transform: translateX(-10500px);
+  position: absolute;
+  display: flex;
+  height: 100%;
+  transition: all .3s ease;
+}
+
+.slide {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-basis: 750px;
+}
